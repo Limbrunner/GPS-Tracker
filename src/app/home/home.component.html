@@ -1,0 +1,46 @@
+<!-- <h1>Hi {{currentUser.firstName}}!</h1>
+<p>You're logged in with Angular 8!!</p> -->
+
+<div class="row">
+
+<!-- Map -->
+<div class="col-10" id="map" style="height: 883px; margin-right: auto;"
+    leaflet
+    [leafletOptions]="options"
+    [leafletLayersControl]="layersControl"
+    [leafletLayers]="layers"
+    (leafletMapReady)="onMapReady($event)"
+    [leafletZoom]="zoom"
+    [leafletCenter]="center">
+</div>
+
+<!-- Cockpit -->
+<div class="col-2" id="cockpit" style="background: whitesmoke; border: 1px solid black;">
+    <div class="carTable">
+        <section>
+            <h1 style="text-align: center;">Fahrzeuge</h1>
+            <table id="t">
+                <thead>Name</thead>
+                <tbody>
+                    <tr *ngFor="let carName of cars">
+                        <td>{{carName}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="buttons">
+        <button (click)="customView();" type="button" style="width: 50%;">Übersicht</button>
+        <button type="button" style="width: 50%;">Letzte Route</button>
+        <button type="button" style="width: 50%;">Fn_03</button>
+        <button type="button" style="width: 50%;">Fn_04</button>
+        <button type="button" style="width: 50%;">Fn_05</button>
+        <button type="button" style="width: 50%;">Fn_06</button>
+        <button type="button" style="width: 50%;">Fn_07</button>
+        <button type="button" style="width: 50%;">Fn_08</button>
+        <button type="button" style="width: 50%;">Fn_09</button>
+        <button type="button" style="width: 50%;">Fn_10</button>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,19 @@
+<!-- <app-home></app-home>
+<router-outlet></router-outlet> -->
+
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-light bg-light" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <h4>GPS Tracker</h4>
+    </div>
+    <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" style="color: black;" href="http://localhost:4200/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()" style="color: black;">Logout</a>
+    </div>
+</nav>
+
+<!-- main content container -->
+<!-- <div> -->
+<app-alert></app-alert>
+<router-outlet></router-outlet>
+<!-- </div> -->

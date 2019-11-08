@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Imports */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+
+/* Leaflet */
+@import '../node_modules//leaflet/dist/leaflet.css';
+
+/* HTML and body elements to full screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

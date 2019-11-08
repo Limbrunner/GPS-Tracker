@@ -1,0 +1,35 @@
+#map {
+    height: 100%;
+    padding: 0;
+    float: left;
+}
+
+#cockpit {
+    /* float: right; */
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 0;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px; /* 0 for no border */
+    width: 100%;
+    height: 18%;
+}
+
+.carTable {
+    height: 80%;
+    border-bottom: 1px dotted black;
+}
+
+.row {
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.container {
+    width: 100%;
+}
